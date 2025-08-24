@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Umesh Chandra Portfolio</title>
+  <style>
+    :root {
+      --bg-dark: #2e2e2e;
+      --highlight: #f4a300;
+      --hover: #fff176;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--bg-dark);
+      color: white;
+    }
+
+    .wrapper {
+      display: flex;
+      max-width: 1200px;
+      margin: 50px auto;
+      background: #3c3f45;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .left-section {
+      background: var(--highlight);
+      width: 35%;
+      padding: 30px;
+      text-align: center;
+      color: black;
+    }
+
+    .left-section img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid white;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.left-section img:hover {
+  transform: scale(1.15);
+}
+
+    .left-section h1 {
+      font-size: 26px;
+      transition: 0.3s;
+    }
+
+    .left-section h1:hover {
+      font-size: 32px;
+      color: var(--bg-dark);
+    }
+
+    .left-section span {
+      font-weight: bold;
+      color: white;
+    }
+
+    .about-box {
+      background-color: #3c3f45;
+      padding: 20px;
+      border-radius: 10px;
+      color: #fff;
+      margin-top: 25px;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    .about-box:hover {
+      font-size: 16px;
+      color: var(--hover);
+    }
+
+    .right-section {
+      width: 65%;
+      padding: 30px;
+    }
+
+    .section {
+      margin-bottom: 25px;
+    }
+
+    .section h2 {
+      border-bottom: 2px solid var(--highlight);
+      padding-bottom: 5px;
+      color: var(--highlight);
+      transition: 0.3s;
+    }
+
+    .section h2:hover {
+      font-size: 24px;
+      color: var(--hover);
+    }
+
+    .section p {
+      transition: 0.3s;
+    }
+
+    .section p:hover {
+      font-size: 18px;
+      color: var(--hover);
+    }
+
+    .circle-skill-group {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 10px;
+    }
+
+    .circle-skill {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      color: #fff;
+      font-size: 14px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      border: 2px solid #ccc;
+      background-color: transparent;
+      transition: 0.3s;
+    }
+
+    .circle-skill:hover {
+      transform: scale(1.1);
+      background-color: var(--highlight);
+      color: #000;
+      border-color: var(--highlight);
+      font-size: 16px;
+    }
+
+    .rounded-boxes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .rounded-item {
+      background-color: #555;
+      border-radius: 20px;
+      padding: 8px 14px;
+      font-size: 13px;
+      color: white;
+      transition: 0.3s;
+    }
+
+    .rounded-item:hover {
+      background-color: var(--highlight);
+      color: #000;
+      transform: scale(1.1);
+      font-size: 15px;
+    }
+
+    .footer {
+      margin-top: 25px;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    .footer p:hover {
+      font-size: 16px;
+      color: var(--hover);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="left-section">
+      <img src="Umesh.jpeg" alt="Umesh Chandra">
+      <h1>Hello, I am<br><span>Umesh Chandra</span></h1>
+      <p>Aspiring Software Engineer</p>
+      <div class="about-box">
+        <h3>About Me</h3>
+        <p>
+          To secure a challenging position in a reputable organization to expand my learning, knowledge, and skills, while making a significant contribution to the success of the company.
+        </p>
+      </div>
+      <div class="footer">
+        <p>📍 Yemmiganur</p>
+        <p>📞 +91 8919535695</p>
+        <p>✉️ umeshchandrabestha@gmail.com</p>
+      </div>
+    </div>
+
+    <div class="right-section">
+      <div class="section">
+        <h2>Education</h2>
+        <p>Engineering, CDS, St. Johns College (2026) - 80%</p>
+        <p>Intermediate, Deeksha Jr College (2022) - 71.33%</p>
+        <p>SSC, SNS ZP High School (2020) - 91%</p>
+      </div>
+
+      <div class="section">
+        <h2>Skills</h2>
+        <div class="circle-skill-group">
+          <div class="circle-skill">C</div>
+          <div class="circle-skill">Python</div>
+          <div class="circle-skill">DBMS</div>
+          <div class="circle-skill">HTML</div>
+          <div class="circle-skill">CSS</div>
+          <div class="circle-skill">JavaScript</div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Personal Skills</h2>
+        <div class="rounded-boxes">
+          <div class="rounded-item">Problem Solving</div>
+          <div class="rounded-item">Communication</div>
+          <div class="rounded-item">Quick Learner</div>
+          <div class="rounded-item">Team Player</div>
+          <div class="rounded-item">Leadership</div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Languages</h2>
+        <div class="rounded-boxes">
+          <div class="rounded-item">English </div>
+          <div class="rounded-item">Telugu </div>
+          <div class="rounded-item">Hindi</div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Hobbies</h2>
+        <div class="rounded-boxes">
+          <div class="rounded-item">Movies</div>
+          <div class="rounded-item">Puzzles</div>
+          <div class="rounded-item">Browsing</div>
+          <div class="rounded-item">Games</div>
+          <div class="rounded-item">Learning</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
